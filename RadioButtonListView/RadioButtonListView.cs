@@ -107,7 +107,7 @@ namespace RadioButtonListView
         public new View View { get => base.View;
             set 
             {
-                var stack = new StackLayout() { Padding = Padding,Orientation = StackOrientation.Horizontal,BackgroundColor = BackgroundColor };
+                var stack = new StackLayout() { Padding = Padding,Orientation = StackOrientation.Horizontal,BackgroundColor = BackgroundColor, Margin = Margin };
                 var btn = new RadioButton() { VerticalOptions = LayoutOptions.Center };
                 stack.Children.Add(btn);
                 stack.Children.Add(value);
@@ -124,6 +124,8 @@ namespace RadioButtonListView
         public Color BackgroundColor { get; set; } = Color.Transparent;
 
         public Thickness Padding { get; set; } = 10;
+
+        public Thickness Margin { get; set; }
       
 
     }
