@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:RadioListviewButton.Sample"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:ctrl="clr-namespace:RadioButtonListView;assembly=RadioButtonListView"
+    x:Class="RadioListviewButton.Sample.MainPage">
+    <StackLayout>
+        
+       
+           <!-- <ctrl:RadioButton.ContentView>
+                <StackLayout>
+                    <Label Text="Welcome to the future" />
+                    <Label Text="You know thats right" />
+                </StackLayout>
+                
+                
+            </ctrl:RadioButton.ContentView>-->
+            
+            
+            <ctrl:RadioButtonListView CircleColor="Gray" SelectedColor="Red" HasUnevenRows="true">
+                <ctrl:RadioButtonListView.ItemsSource>
+                    <x:Array Type="{x:Type sys:String}" x:Key="array">
+                        <x:String>Hello</x:String>
+                        <x:String>World</x:String>
+                    </x:Array>
+                </ctrl:RadioButtonListView.ItemsSource>
+                
+                <ctrl:RadioButtonListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                        <ctrl:RadioButtonViewCell Padding="0" BackgroundColor="WhiteSmoke"> 
+                             <StackLayout Padding="10" >
+                                     <Label Text="Hello" />
+                            <Label Text="World" />
+                              </StackLayout>
+                        </ctrl:RadioButtonViewCell>
+                        
+                      
+                    </DataTemplate>
+                </ctrl:RadioButtonListView.ItemTemplate>
+                
+                
+            </ctrl:RadioButtonListView>
+            
+            
+        
+    </StackLayout>
+</ContentPage>
