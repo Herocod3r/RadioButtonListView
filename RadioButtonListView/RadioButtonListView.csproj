@@ -6,7 +6,7 @@
         <Version>1.0.0</Version>
         <Authors>your_name</Authors>
         <Company>your_company</Company>
-        <RepositoryUrl>http://www.google.co,</RepositoryUrl>
+        <RepositoryUrl>https://github.com/Herocod3r/RadioButtonListView.git</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
